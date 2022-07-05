@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+background-color: #E5E5E5;
+font-family: "Roboto Slab", sans-serif;
+/* padding: 1rem; */
+}
+
+button,
+.expense-details-container input:nth-child(3),
+#date::-webkit-calendar-picker-indicator{
+cursor: pointer;
+}
+
+::placeholder{
+color:black;
+font-size: 1rem;
+letter-spacing: 1.5px;
+}
+
+/* .container{
+width: 450px;
+margin: 35px auto;
+padding: 20px;
+background-color: red;
+} */
+
+.expense-tracker-wrapper{
+margin: 35px auto;
+max-width: 450px;
+width: 100%;
+background-color: #F5F5F5;
+/* background-color: blue; */
+padding:  20px;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-new-expense{
+width: 100%;
+border:none;
+padding: 1rem;
+border-radius: 8px;
+margin-bottom: 24px;
+background-color: #7576ED;
+color: #e2e3f0;
+font-size:1.1rem;
+font-weight: bold;
+}
+
+.expense-details-container{
+margin-top: 13px;
+background-color: #FFF;
+/* background-color: yellow; */
+padding:1.2rem 1.2rem 1.2rem .75em;
+border-radius: 8px;
+display: none;
+}
+
+.expense-details-container input{
+display: block;
+width: 100%;
+padding: 1em;
+outline: none;
+margin-bottom: 14px;
+border-radius: 5px;
+border: 1px solid #7576ed;
+background-color: #f6f6f8;
+}
+
+.cancel-add-btn-container{
+text-align: right;
+padding-bottom: 4px;
+width: 100%;
+}
+
+.cancel-btn{
+border: none;
+background: none;
+color: #dd2c44;
+font-size: 1.3rem;
+}
+
+.add-expense-btn{
+border: none;
+background: #7576ED;
+padding:7px 15px;
+color: #e2e3f0;
+margin-left:20px;
+font-size: 1.3rem;
+border-radius: 5px;
+}
+
+.expense-list-container{
+background-color: #fff;
+border-top-left-radius: 5px;
+border-top-right-radius:5px ;
+padding-bottom: .85rem;
+margin-top: 30px;
+
+}
+
+
+.expense-list-heading h3{
+padding: 15px;
+}
+
+.expense-list{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+padding:7px 15px 10px;
+border-top: 3px solid #dcdcdc
+}
+
+/* .expense-list-other-details{
+display: flex;
+justify-content: space-between;
+} */
+
+.expense-list-date{
+background-color: #7576ED;
+text-align: center;
+padding:4px 15px;
+border-radius: 5px;
+color: #e2e3f0;
+}
+
+.remove-btn{
+border: none;
+background: none;
+color: #dd2c44;
+}
+
+/* @media (max-width:360px){
+.expense-list{
+flex-direction: column;
+}
+} */
+
+
+ /* @media (max-width:360px){
+.cancel-add-btn-container{
+display: flex;
+flex-direction: column-reverse;
+gap: 1rem;
+}
+} */
